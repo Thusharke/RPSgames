@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+<link rel="stylesheet" type="text/css" href="stylesheets/game.css">
+	</head>
+<body>
+<h1>Let's play Rock Paper Scissors!</h1>
+<div class = "stripe">
+	<button id="reset"><b>Reset</b></button>
+	<span id="result"></span>
+	<form action="/" method="GET" id="back">
+		<button id="return"><b>Back</b></button>
+	</form>
+</div>
+<div class = "game-section">
+		<div class = "option rock"><i class="fas fa-hand-rock"></i></div>
+		<div class = "option paper"><i class="fas fa-hand-paper"></i></div>
+		<div class = "option scissors"><i class="fas fa-hand-scissors"></i></div>
+</div>
+<hr>
+<div class = "Score">
+	<p><h3>First to score 5 wins</h3></p>
+	<h2> <div class = "blue"></div><strong>YOU - </strong> <span id="yourScore">0</span> VS <div class = "purple"></div><strong>CPU - </strong> <span id="CPUscore">0</span> </h2>
+</div>
+
+<script type="text/javascript" src="javaScript/game.js"></script>
+<%- include("partials/footer") %>
